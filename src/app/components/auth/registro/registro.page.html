@@ -1,0 +1,26 @@
+<div class="container">
+  <h1 class="heading">🚀 Crear cuenta<br><br></h1>
+  <p class="para">Registrate para comenzar!</p>
+  <form [formGroup]="formData">
+    <ion-item lines="none" class="ion-item">
+      <fieldset  class="input-item">
+        <legend>Nombre completo</legend> 
+        <ion-input class="input"formControlName="name" type="text" placeholder="John Doe"></ion-input>
+      </fieldset>
+    </ion-item>
+    <ion-item lines="none" class="ion-item">
+      <fieldset  class="input-item">
+        <legend>Email</legend> 
+        <ion-input class="input" formControlName="email" type="email" placeholder="john@doe.com"></ion-input>
+      </fieldset>
+    </ion-item>
+    <ion-item lines="none" class="ion-item">
+      <fieldset class="input-item">
+        <legend>Contraseña</legend> 
+        <ion-input class="input"formControlName="password" type="password" placeholder="*******"></ion-input>
+      </fieldset>
+    </ion-item>
+    <p class="signup-text">Ya soy miembror&nbsp;<a routerLink="/login">Ingresar?</a></p>
+    <ion-button class="login-button" (click)="register()" expand="block">Registrarse</ion-button>
+  </form>
+</div>
