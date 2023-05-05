@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'tabla-didactica-app',
+  appId: 'TablaDidacticaApp',
+  appName: 'Tabla didactica',
   webDir: 'www',
   bundledWebRuntime: false
 };

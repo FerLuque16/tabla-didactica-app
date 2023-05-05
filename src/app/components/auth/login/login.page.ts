@@ -52,4 +52,10 @@ export class LoginPage implements OnInit {
     console.log(event);
   }
 
+  completarDatos(user:string,contraseña:string){
+    this.formData.controls['email'].patchValue(user);
+    this.formData.controls['password'].patchValue(contraseña);
+    
+  }
+
 }

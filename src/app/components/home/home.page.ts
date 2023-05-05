@@ -15,12 +15,12 @@ export class HomePage implements OnInit {
   }
 
   volverSinCerrarSesion(){
-    this.router.navigate(['/auth']);
+    this.router.navigate(['/login']);
 
   }
   volverYCerrarSesion(){
     this.auth.logout();
-    this.router.navigate(['/auth']);
+    this.router.navigate(['/login']);
 
   }
 
