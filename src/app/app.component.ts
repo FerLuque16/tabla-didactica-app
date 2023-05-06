@@ -10,6 +10,6 @@ export class AppComponent {
   constructor(private router: Router) {}
 
   ngOnInit(){
-    this.router.navigateByUrl('splash')
+    // this.router.navigateByUrl('splash')
   }
 }

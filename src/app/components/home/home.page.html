@@ -1,9 +1,44 @@
 
 <ion-content [fullscreen]="true">
   <div class="container">
-    <h1>Esta es la pagina principal</h1>
+    <!-- <h1>Esta es la pagina principal</h1>
 
     <ion-button (click)="volverSinCerrarSesion()"> Volver sin cerrar sesion</ion-button>
-    <ion-button (click)="volverYCerrarSesion()"> Volver y cerrar sesion</ion-button>
+    <ion-button (click)="volverYCerrarSesion()"> Volver y cerrar sesion</ion-button> -->
+
+    <ion-button color="warning" class="boton-numero">1</ion-button>
+    <ion-button color="warning" class="boton-numero">2</ion-button>
+    <ion-button color="warning" class="boton-numero">3</ion-button>
+    <ion-button color="warning" class="boton-numero">4</ion-button>
+    <ion-button color="warning" class="boton-numero">5</ion-button>
+
+
   </div>
+
+  <ion-fab color="danger" horizontal="center" vertical="bottom" class="boton-logout">
+    <ion-fab-button (click)="cerrarSesion()">
+      <ion-icon name="log-out-outline"></ion-icon>
+
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="dark" style="font-size: 30px; width: 50px; height: 50px;">
+      <img src="/assets/español.png" width="100px" height="50px" *ngIf="this.espanol" />
+      <img src="/assets/ingles.png" width="100%" height="100%"
+        *ngIf="this.ingles" />
+      <img src="/assets/portugues.png" width="100%" height="100%" *ngIf="this.portugues" />
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="dark" style="width: 50px; height: 50px;" *ngIf="!this.espanol" (click)="cambiarIdioma(1)">
+        <img src="/assets/español.png" width="100px" height="50px" />
+      </ion-fab-button>
+      <ion-fab-button color="dark" style="width: 50px; height: 50px;" *ngIf="!this.ingles" (click)="cambiarIdioma(2)">
+        <img src="/assets/ingles.png" width="100%" height="100%" />
+      </ion-fab-button>
+      <ion-fab-button color="dark" style="width: 50px; height: 50px;" *ngIf="!this.portugues"
+        (click)="cambiarIdioma(3)">
+        <img src="/assets/portugues.png" width="100%" height="100%" />
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>
