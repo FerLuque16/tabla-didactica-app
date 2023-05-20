@@ -68,7 +68,7 @@ export class HomePage implements OnInit {
           this.espanol = true;
           this.ingles = false;
           this.portugues = false; 
-          this.idiomaActual = "español";        
+          this.idiomaActual = "espanol";        
           break;
         case 2:
           this.ingles = true;
